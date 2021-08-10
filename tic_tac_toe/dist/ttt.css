@@ -1,6 +1,44 @@
+ul, li, body {
+    margin: 0;
+    padding: 0;
+
+}
 
 ul {
     display: flex;
     flex-wrap: wrap;
-    width: 100px;
+    width: 600px;
+    border: 10px solid black;
+    flex-direction: row;
+}
+
+li{
+    border: 2px solid blue;
+    float: left;
+    width: 196px;
+    height: 100px;
+    list-style: none;
+    background: gray;
+}
+
+li:hover{
+    background: yellow;
+}
+
+.x::after{
+    font-size: 50px;
+    text-align: center;
+    display: block;
+    content: "X";
+}
+
+.o::after{
+    font-size: 50px;
+    text-align: center;
+    display: block;
+    content: 'O';
+}
+
+figcaption {
+    font-size: 100px;
 }
